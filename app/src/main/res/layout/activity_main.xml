@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <EditText
+           android:id="@+id/input1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Zadej Jméno"
+           android:inputType="text"
+           android:textColor="@color/blue" />
+       <EditText
+           android:id="@+id/input2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Zadej primeni"
+           android:inputType="text"
+           android:textColor="@color/blue"
+           android:layout_weight="1"
+           />
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/input3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Adresa bydliště"
+            android:inputType="text"
+            android:textColor="@color/blue"
+            tools:ignore="DuplicateIds"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/input4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="věk"
+            android:inputType="text"
+            android:textColor="@color/blue"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Odeslat"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Vymazat"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="603dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@color/bluetones"
+            android:padding="10dp"
+            android:text="infromace"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
