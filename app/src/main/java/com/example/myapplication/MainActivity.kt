@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         conf.setOnClickListener{
             val n= name.text.toString()
-            val ftext="Jmenuji se " +name.text.toString()+" "+lastname.text.toString()+ " a je mi "+age.text.toString()+". Moje Bydliště je " +addr.text.toString();
+            val ftext="Já se jmenuji " +name.text.toString()+" "+lastname.text.toString()+ " a je mi "+age.text.toString()+". Moje Bydliště je " +addr.text.toString() +"rád vás poznávám";
             info.text=ftext;
         }
         del.setOnClickListener {
