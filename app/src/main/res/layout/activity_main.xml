@@ -7,29 +7,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@drawable/background_gradient"
     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workers Spy"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="16dp" />
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
        >
 
+
        <EditText
-           android:id="@+id/input1"
+           android:id="@+id/uname"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:hint="Zadej Jméno"
+           android:hint="Váš email"
            android:inputType="text"
-           android:textColor="@color/blue" />
-       <EditText
-           android:id="@+id/input2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:hint="Zadej primeni"
-           android:inputType="text"
-           android:textColor="@color/blue"
            android:layout_weight="1"
-           />
+           android:textColor="@color/blue"
+           android:paddingLeft="20dp"
+           android:minHeight="50dp"
+           android:background="@drawable/edit_text_backgroud"/>
 
    </LinearLayout>
     <LinearLayout
@@ -39,14 +46,18 @@
         >
 
         <EditText
-            android:id="@+id/input3"
+            android:id="@+id/passwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Adresa bydliště"
-            android:inputType="text"
+            android:hint="password"
+            android:inputType="textPassword"
             android:textColor="@color/blue"
             tools:ignore="DuplicateIds"
             android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="50dp"
+            android:background="@drawable/edit_text_backgroud"
 
             />
 
@@ -54,31 +65,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/input4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="věk"
-            android:inputType="text"
-            android:textColor="@color/blue"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            />
+
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="Odeslat"
+            android:text="Přihlásit"
             android:textSize="18sp" />
         <Button
-            android:id="@+id/btn2"
+            android:visibility="gone"
+            android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            android:text="Vymazat"
+            android:text="Odhlásit"
             android:textSize="18sp"
             android:textColor="@color/white"
             android:backgroundTint="@color/blue"
@@ -90,12 +93,19 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:visibility="gone"
             android:id="@+id/output"
             android:layout_width="603dp"
+            android:gravity="center"
             android:layout_height="200dp"
             android:layout_weight="1"
-            android:background="@color/bluetones"
-            android:padding="10dp"
+            android:background="@drawable/textview_background"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+
             android:text="infromace"
 
 
@@ -106,6 +116,30 @@
 
 
 
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/workButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/startWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Začít práci"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/stopWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ukončit práci"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
     </LinearLayout>
 
 </LinearLayout>

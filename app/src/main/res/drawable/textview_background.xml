@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Částečně transparentní pozadí (bílá s 50% průhledností) -->
+    <solid android:color="#80FFFFFF" /> <!-- Bílá barva s 50% průhledností -->
+
+    <!-- Ohraničení v barvě pozadí (můžeš upravit barvu podle potřeby) -->
+    <stroke android:width="2dp" android:color="#0000FF" /> <!-- Modrá barva ohraničení -->
+
+    <!-- Zaoblené rohy -->
+    <corners android:radius="15dp" /> <!-- 15dp zaoblené rohy -->
+
+    <!-- Můžeš přidat padding podle potřeby -->
+    <padding android:left="10dp" android:right="10dp" android:top="10dp" android:bottom="10dp" />
+</shape>

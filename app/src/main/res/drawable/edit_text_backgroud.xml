@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- Bílé pozadí -->
+    <stroke android:width="5dp" android:color="#FFFF00" />  <!-- Žlutý rámeček -->
+    <corners android:radius="15dp" />  <!-- Zaoblené rohy -->
+    <padding android:left="20dp" />  <!-- Padding zleva 20dp -->
+</shape>
