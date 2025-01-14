@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <!-- Gradient between pastel green and light green -->
+    <gradient
+        android:startColor="#A8E6CF"
+    android:endColor="#DCEDC1"
+    android:angle="270" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp" />
+</shape>

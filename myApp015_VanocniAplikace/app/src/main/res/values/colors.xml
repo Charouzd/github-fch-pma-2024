@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btnplay">#1D421D</color>
+    <color name="btnnext">#043F8F</color>
+    <color name="btnprev">#673AB7</color>
+    <color name="btnstop">#2C2C32</color>
+</resources>
